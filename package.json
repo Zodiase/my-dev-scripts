@@ -12,6 +12,9 @@
     "bin": {
         "xc-dev": "lib/index.js"
     },
+    "engines": {
+        "node": ">=8"
+    },
     "scripts": {
         "start": "nodemon",
         "build": "tsc -p .",
