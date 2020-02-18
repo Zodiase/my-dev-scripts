@@ -20,7 +20,9 @@
         "node": ">=8"
     },
     "scripts": {
+        "clean": "rm -rf lib",
         "build": "tsc -p .",
+        "build:watch": "tsc --watch -p .",
         "lint": "eslint src --ext .ts",
         "check-types": "tsc -p . --noEmit",
         "prepare": "npm run build",
