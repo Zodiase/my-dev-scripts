@@ -1,8 +1,8 @@
-import chalk from 'chalk';
+import { hello } from './hello';
 
 export const commandCliInterface = 'hello';
 export const commandDescription = 'prints hello world.';
 
 export function commandAction(): void {
-    console.log(chalk.cyan('hello world!'));
+    hello();
 }

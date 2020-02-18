@@ -1,4 +1,4 @@
-import clear from 'clear';
+import { clear } from './clear';
 
 export const commandCliInterface = 'clear';
 export const commandDescription = 'clears the terminal view.';
