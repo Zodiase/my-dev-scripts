@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 
-import clear from 'clear';
-import chalk from 'chalk';
+import program from 'commander';
 
-clear();
-console.log(chalk.cyan('hello world'));
+import { registerCommands } from './commands';
+
+registerCommands(program);
+
+program.parse(process.argv);
+
+if (process.argv.length <= 2) {
+    program.outputHelp();
+}
